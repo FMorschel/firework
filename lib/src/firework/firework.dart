@@ -117,7 +117,7 @@ class Firework
       ));
 
   List<Animation<Offset>> get _fireworkParticles => [
-        for (int i = 0, max = _random100.toInt().abs() + 100; i < max; i++)
+        for (int i = 0, max = _random100.toInt().abs() ~/ 2 + 50; i < max; i++)
           Tween<Offset>(
             begin: Offset.zero,
             end: _circleOffset(),
